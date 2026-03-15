@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('/fonts/itc-garamond-std-light-condensed-italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Grotesk Bold';
+  src: url('/fonts/Grotesk Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Europa Grotesk';
+  src: url('/fonts/europa-grotesk-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Europa DemBol';
+  src: url('/fonts/Europa Grotesk SH DemBol.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-archivo-black: var(--font-archivo-black);
+  --font-archivo: var(--font-archivo);
+  --font-manrope: var(--font-manrope);
+  --font-playfair: var(--font-playfair);
+  --font-syne: var(--font-syne);
+  --font-garamond: 'Garamond', serif;
+  --font-grotesk-bold: 'Grotesk Bold', sans-serif;
+  --font-europa-grotesk: 'Europa Grotesk', sans-serif;
+  --font-europa-dembol: 'Europa DemBol', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+  }
+
+  .dark {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-manrope), sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-archivo-black), sans-serif;
+    font-weight: 400;
+  }
+}
+
+/* Custom Scrollbar Utility */
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+  }
+}
