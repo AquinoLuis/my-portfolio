@@ -184,7 +184,7 @@ export default function AboutPage() {
                             viewport={{ once: true, margin: "-100px" }}
                         >
                             <h2 className="text-5xl md:text-6xl lg:text-[6rem] font-archivo-black font-black tracking-tight leading-[0.9] text-[#e6dcc8] mb-16">
-                                Education &<br />Certifications
+                                My Studies
                             </h2>
                         </motion.div>
                     </div>
