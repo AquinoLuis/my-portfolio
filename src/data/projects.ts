@@ -41,6 +41,7 @@ export const projectsData: Project[] = [
     thumbnail: "/assets/DONCHE.png",
     shortDescription: "HTML, CSS, JS",
     liveLink: "https://aquinoluis.github.io/DONCH-SchoolProject/",
+    githubLink: "https://github.com/AquinoLuis/DONCH-SchoolProject",
     fullDescription: "A donut website showcasing classic, tasty donuts and trending donuts. Built entirely from scratch using HTML, CSS, and Vanilla JavaScript to deliver a delicious and interactive user experience.",
     client: "School Project",
     role: "Front-end Developer",

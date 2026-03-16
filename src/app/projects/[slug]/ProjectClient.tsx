@@ -52,17 +52,22 @@ export default function ProjectClient({ project, nextProject }: ProjectClientPro
                     {project.fullDescription}
                 </p>
 
-                {/* Primary Action Button */}
-                {project.liveLink && (
-                    <div className="mb-16">
+                {/* Action Buttons */}
+                <div className="mb-16 flex flex-col sm:flex-row gap-4">
+                    {project.liveLink && (
                         <Button href={project.liveLink} icon={<ArrowUpRight size={18} strokeWidth={3} />}>
                             Visit Live Site
                         </Button>
-                    </div>
-                )}
+                    )}
+                    {project.githubLink && (
+                        <Button href={project.githubLink} variant="secondary" icon={<ArrowUpRight size={18} strokeWidth={3} />}>
+                            View Source Code
+                        </Button>
+                    )}
+                </div>
 
                 {/* Metadata Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-8 py-8 border-t border-b border-white/10 font-manrope text-sm">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 py-8 border-t border-b border-white/10 font-manrope text-sm">
                      <div className="flex flex-col gap-2">
                         <span className="text-gray-500 font-bold uppercase tracking-widest">Client</span>
                         <span className="text-white font-medium">{project.client}</span>
@@ -72,6 +77,10 @@ export default function ProjectClient({ project, nextProject }: ProjectClientPro
                         <span className="text-white font-medium">{project.role}</span>
                     </div>
                     <div className="flex flex-col gap-2">
+                        <span className="text-gray-500 font-bold uppercase tracking-widest">Technologies</span>
+                        <span className="text-white font-medium">{project.shortDescription}</span>
+                    </div>
+                    <div className="flex flex-col gap-2 mt-4 md:mt-0 lg:mt-0 col-span-2 md:col-span-1 lg:col-span-1">
                         <span className="text-gray-500 font-bold uppercase tracking-widest">Year</span>
                         <span className="text-white font-medium">{project.year}</span>
                     </div>
