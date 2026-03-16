@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ArrowRight } from 'lucide-react';
 import Button from './Button';
 
 export default function Footer() {
@@ -21,17 +22,17 @@ export default function Footer() {
 
             {/* CTA Content */}
             <div className="relative z-10 flex flex-col items-center justify-center w-full px-4 mb-32 max-w-5xl mx-auto text-center">
-                <h2 className="text-5xl md:text-7xl lg:text-[7rem] font-archivo-black font-black uppercase tracking-tight leading-none">
-                    Ready to <span className="font-playfair italic text-[#E31E24] lowercase">boost</span><br />
-                    your digital vision?
+                <h2 className="text-6xl md:text-8xl lg:text-[8rem] font-archivo-black font-black tracking-tighter leading-[0.9]">
+                    Ready to <span className="font-playfair italic text-[#E31E24] tracking-normal font-normal lowercase">boost</span> your<br />
+                    digital vision?
                 </h2>
 
-                <p className="font-archivo font-medium text-gray-400 text-base md:text-lg max-w-2xl mx-auto mt-8 md:mt-10 leading-relaxed">
+                <p className="font-archivo font-medium text-gray-400 text-sm md:text-base max-w-xl mx-auto mt-6 md:mt-8 leading-relaxed">
                     Let’s collaborate to build a presence that stands out. Reach out today to bring your ideas to life.
                 </p>
 
-                <Button href="/contact" variant="primary" className="mt-12 justify-center w-full sm:w-auto shadow-2xl shadow-[#E31E24]/20">
-                    Work with me
+                <Button href="/contact" variant="primary" className="mt-10 justify-center shadow-2xl shadow-[#E31E24]/20 rounded-full px-8 py-3 text-sm flex items-center gap-4">
+                    Work with me <span className="flex items-center justify-center bg-white/10 rounded-full w-8 h-8"><ArrowRight size={16} /></span>
                 </Button>
             </div>
 
