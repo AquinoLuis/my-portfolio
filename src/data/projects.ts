@@ -18,6 +18,23 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
+    slug: "artin",
+    title: "Artin",
+    category: "WEBSITE",
+    thumbnail: "/assets/Wordpress/Homes.png",
+    shortDescription: "WordPress",
+    liveLink: "https://artiinn.wordpress.com",
+    fullDescription: "Artin is a website built to showcase types of arts and their meaning. It provides a platform to explore various artistic expressions.",
+    client: "Personal Project",
+    role: "Developer",
+    year: "2026",
+    heroImage: "/assets/Wordpress/Homes.png",
+    gallery: [
+      "/assets/Wordpress/c.png",
+      "/assets/Wordpress/ls.png"
+    ]
+  },
+  {
     slug: "donche",
     title: "DONCHE",
     category: "WEBSITE",

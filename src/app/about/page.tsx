@@ -119,6 +119,7 @@ export default function AboutPage() {
                                 <li className="flex items-center gap-4"><span className="w-3 h-3 rounded-full bg-[#E31E24] shadow-[0_0_12px_rgba(227,30,36,0.6)] shrink-0" /> HTML</li>
                                 <li className="flex items-center gap-4"><span className="w-3 h-3 rounded-full bg-[#E31E24] shadow-[0_0_12px_rgba(227,30,36,0.6)] shrink-0" /> CSS</li>
                                 <li className="flex items-center gap-4"><span className="w-3 h-3 rounded-full bg-[#E31E24] shadow-[0_0_12px_rgba(227,30,36,0.6)] shrink-0" /> JavaScript</li>
+                                <li className="flex items-center gap-4"><span className="w-3 h-3 rounded-full bg-[#E31E24] shadow-[0_0_12px_rgba(227,30,36,0.6)] shrink-0" /> React.js</li>
                             </ul>
                             <ul className="space-y-6 font-manrope text-gray-200 font-bold text-lg md:text-xl tracking-wide">
                                 <li className="flex items-center gap-4"><span className="w-3 h-3 rounded-full bg-[#E31E24] shadow-[0_0_12px_rgba(227,30,36,0.6)] shrink-0" /> Python</li>

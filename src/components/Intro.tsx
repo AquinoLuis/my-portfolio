@@ -60,7 +60,7 @@ export default function Intro() {
                     className="relative w-80 h-96 md:w-96 md:h-[30rem] lg:w-[32rem] lg:h-[38rem] rounded-3xl overflow-hidden shadow-2xl border border-[#e6dcc8]/10"
                 >
                     <Image
-                        src="/assets/NEW FACEE.jpg"
+                        src="/assets/Formal Photo 1.jpg"
                         alt="Portrait of Luis Aquino"
                         fill
                         className="object-cover object-top"

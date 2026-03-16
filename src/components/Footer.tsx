@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom Info Row */}
-            <div className="relative z-10 w-full max-w-[96vw] mx-auto border-t border-[#e6dcc8]/10 pt-12 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 px-4 md:px-0">
+            <div className="relative z-10 w-full max-w-[96vw] mx-auto border-t border-[#e6dcc8]/10 pt-12 grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-4 sm:gap-x-8 px-4 md:px-0">
                 {/* Column 1: Identity */}
                 <div className="col-span-2 md:col-span-1 flex flex-col gap-2 font-archivo font-medium text-sm text-gray-400">
                     <span className="font-archivo-black font-black text-xl text-[#e6dcc8] uppercase tracking-wider mb-2">Luis AQUINO</span>
@@ -45,14 +45,14 @@ export default function Footer() {
                 </div>
 
                 {/* Column 2: Contact */}
-                <div className="flex flex-col gap-3 font-archivo font-medium text-sm text-gray-400">
+                <div className="col-span-2 md:col-span-1 flex flex-col gap-3 font-archivo font-medium text-sm text-gray-400">
                     <span className="text-base text-[#e6dcc8] font-bold mb-1">Contact</span>
-                    <a href="mailto:thisisgab23@gmail.com" className="hover:text-[#E31E24] transition-colors break-words">thisisgab23@gmail.com</a>
+                    <a href="mailto:thisisgab23@gmail.com" className="hover:text-[#E31E24] transition-colors">thisisgab23@gmail.com</a>
                     <a href="tel:+63 9763926401" className="hover:text-[#E31E24] transition-colors">+63 976 392 6401</a>
                 </div>
 
                 {/* Column 3: Socials */}
-                <div className="flex flex-col gap-3 font-archivo font-medium text-sm text-gray-400">
+                <div className="col-span-1 flex flex-col gap-3 font-archivo font-medium text-sm text-gray-400">
                     <span className="text-base text-[#e6dcc8] font-bold mb-1">Socials</span>
                     <a href="https://www.instagram.com/luisaquinooo/" target="_blank" rel="noopener noreferrer" className="hover:text-[#E31E24] transition-colors">Instagram</a>
                     <a href="https://www.tiktok.com/@luisseen?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="hover:text-[#E31E24] transition-colors">TikTok</a>
@@ -61,7 +61,7 @@ export default function Footer() {
                 </div>
 
                 {/* Column 4: Navigation */}
-                <div className="flex flex-col gap-3 font-archivo font-medium text-sm text-gray-400">
+                <div className="col-span-1 flex flex-col gap-3 font-archivo font-medium text-sm text-gray-400">
                     <span className="text-base text-[#e6dcc8] font-bold mb-1">Pages</span>
                     <Link href="/" onClick={handleHomeClick} className="hover:text-[#E31E24] transition-colors">Home</Link>
                     <Link href="/about" className="hover:text-[#E31E24] transition-colors">About</Link>

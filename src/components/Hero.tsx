@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import { Star, Zap, Moon, Plus } from "lucide-react";
 import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -70,20 +69,6 @@ export default function Hero() {
             "-=0.4"
         );
 
-        // 3. Asset Pop-in (Simultaneous with 'Port')
-        tl.fromTo(".hero-asset", 
-            { scale: 0, opacity: 0, rotation:-45 },
-            {
-                scale: 1,
-                opacity: 0.8,
-                rotation: 0,
-                duration: 0.8,
-                ease: "back.out(2)",
-                stagger: 0.15
-            }, 
-            "<0.2"
-        );
-
         // 4. Phase 2: Letters 5-9 ('folio') Transformative Spin
         tl.fromTo(".hero-char-2", 
             { scale: 0, opacity: 0, rotationY: -360 },
@@ -96,7 +81,7 @@ export default function Hero() {
                 ease: "expo.out",
                 transformOrigin: "center center"
             }, 
-            "<0.4"
+            "<0.6"
         );
 
         // 5. H2 Words Assembly (Simultaneous with 'folio')
@@ -125,20 +110,6 @@ export default function Hero() {
             "-=0.4"
         );
 
-        // 7. Phase 3: Infinite Floating Loop for Assets (Yoyo)
-        gsap.to(".hero-asset", {
-            y: "-=20",
-            rotation: "random(-15, 15)",
-            duration: 6,
-            yoyo: true,
-            repeat: -1,
-            ease: "sine.inOut",
-            stagger: {
-                each: 0.5,
-                from: "random"
-            }
-        });
-
     }, { scope: containerRef });
 
     return (
@@ -162,12 +133,6 @@ export default function Hero() {
 
             {/* Hero Text (z-20) */}
             <div className="relative z-20 flex flex-col items-center justify-center px-4 w-full h-full pt-16 mt-0">
-                
-                {/* Decorative Floating Assets (-z-10 local bounds to stay under CTA buttons) */}
-                <Star className="hero-asset absolute top-[15%] left-[10%] md:top-[20%] md:left-[15%] text-[#e6dcc8] w-8 h-8 md:w-16 md:h-16 opacity-0 -z-10" fill="currentColor" />
-                <Zap className="hero-asset absolute bottom-[25%] right-[10%] md:bottom-[30%] md:right-[20%] text-[#d52727] w-10 h-10 md:w-20 md:h-20 opacity-0 -z-10" fill="currentColor" />
-                <Moon className="hero-asset absolute top-[12%] right-[15%] md:top-[25%] md:right-[15%] text-[#e6dcc8] w-12 h-12 md:w-14 md:h-14 opacity-0 -z-10" fill="currentColor" />
-                <Plus className="hero-asset absolute bottom-[20%] left-[15%] md:bottom-[25%] md:left-[20%] text-[#d52727] w-10 h-10 md:w-14 md:h-14 opacity-0 -z-10" />
 
                 {/* 1. Top Pill */}
                 <div className="hero-pill mb-6 md:mb-8 px-4 md:px-6 py-2 rounded-full bg-black/40 border border-[#e6dcc8]/10 backdrop-blur-md opacity-0">
